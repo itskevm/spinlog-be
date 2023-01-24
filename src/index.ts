@@ -23,8 +23,9 @@ app.get("/666", async (req, res) => {
   res.send(`Look this is a link for BRENDA who needs to bring 2 people to the wedding`)
 })
 
-app.get("/888", async (req, res) => {
-  res.send(`Look this is a link for DIEGO who needs to bring 3 people to the wedding`)
+app.get("/add-kevin", async (req, res) => {
+  const { rows } = await pool.query("INSERT INTO driver(driver_name) VALUES (Kevin)")
+  res.send(`we need to find out how many rows were made`)
 })
 
 app.get("/search", async (req, res) => {
