@@ -1,9 +1,8 @@
 {
-  "name": "expressjs-postgres",
-  "private": true,
+  "name": "spinlog-be",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "author": "Jake Runzer",
+  "author": "Kevin Matos",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/index.ts",
